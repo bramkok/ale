@@ -43,6 +43,11 @@ let s:default_registry = {
 \       'suggested_filetypes': ['python'],
 \       'description': 'Sort Python imports with isort.',
 \   },
+\   'xo': {
+\       'function': 'ale#fixers#xo#Fix',
+\       'suggested_filetypes': ['javascript', 'typescript'],
+\       'description': 'Apply xo to a file.',
+\   },
 \   'prettier': {
 \       'function': 'ale#fixers#prettier#Fix',
 \       'suggested_filetypes': ['javascript', 'typescript', 'json', 'css', 'scss', 'less'],
